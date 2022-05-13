@@ -21,23 +21,30 @@ const AddNote = (props) => {
 
     return (
         <div className="container my-3">
-            <h2>Add a Note</h2>
-            <form className="my-3">
-                <div className="mb-3">
-                    <label htmlFor="title" className="form-label">Title</label>
-                    <input type="text" className="form-control" id="title" name="title" aria-describedby="emailHelp" value={note.title} onChange={onChange} minLength={5} required /> 
+            <h2 className='text-center'>Add a Note</h2>
+            <div className='row'>
+            <div className='col-1'></div>
+            
+            <form className="my-3 col-10">
+                <div className="row">
+                <div className=" mb-3  col-8">
+                    <input type="text" className="form-control" placeholder="Enter Title" id="title" name="title" aria-describedby="emailHelp" value={note.title} onChange={onChange} minLength={5} required /> 
+                
                 </div>
-                <div className="mb-3">
-                    <label htmlFor="description" className="form-label">Description</label>
-                    <input type="text" className="form-control" id="description" name="description" value={note.description} onChange={onChange} minLength={5} required />
+                <div className=" mb-3  col-4">
+                    <input type="text" className="form-control" placeholder="Enter Tag" id="tag" name="tag" value={note.tag} onChange={onChange} minLength={5} required />
+
                 </div>
-                <div className="mb-3">
-                    <label htmlFor="tag" className="form-label">Tag</label>
-                    <input type="text" className="form-control" id="tag" name="tag" value={note.tag} onChange={onChange} minLength={5} required />
                 </div>
+                <div className="mb-3  col-12">
+                    <textarea type="text" className="form-control" id="description" placeholder="Enter Description" name="description" value={note.description} onChange={onChange} minLength={5} required  rows="3"> </textarea>
+                </div>
+               
                
                 <button disabled={note.title.length<5 || note.description.length<5} type="submit" className="btn btn-primary" onClick={handleClick}>Add Note</button>
             </form>
+            <div className='col-1'></div>
+            </div>
         </div>
 
         

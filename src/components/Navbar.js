@@ -14,7 +14,7 @@ export const Navbar = () => {
     <nav className="navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark">
       <div className="container-fluid">
        
-        <Link className="navbar-brand" to="/"><h3>SKYNotE</h3></Link>
+        <Link className="navbar-brand"  to="/"><h3>SKYNotE</h3></Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -40,7 +40,7 @@ export const Navbar = () => {
           </ul>
           {!localStorage.getItem('token')?<form className='d-flex'>
           <Link className="btn btn-primary mx-1" to="/login" role="button">Login</Link>
-          <Link className="btn btn-primary mx-1" to="/signup" role="button">Sign up</Link>
+          
           </form>:<button onClick={handleLogout} className='btn btn-danger mx-1'>Logout
           <i className="fa-solid fa-right-from-bracket mx-2"></i></button>}
           

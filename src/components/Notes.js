@@ -44,7 +44,7 @@ const Notes = (props) => {
         <>
             <AddNote showAlert={props.showAlert}/>
             <button type="button" ref={ref} className="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#editModal">
-                Launch demo modal
+            Update Your Note
             </button>
             <div className="modal fade" id="editModal" tabIndex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
@@ -70,14 +70,14 @@ const Notes = (props) => {
                             </form>
                         </div>
                         <div className="modal-footer">
-                            <button ref={refClose} type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button ref={refClose} type="button" className="btn btn-danger" data-bs-dismiss="modal">Close</button>
                             <button disabled={note.etitle.length<5 || note.edescription.length<5} onClick={handleClick} type="button" className="btn btn-primary">Update Note</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <h2>Your Notes</h2>
+            <h2 className='text-center'>Your Notes</h2>
             {notes.length===0 ? 'No notes to display' : 
             <div className="row my-3">
                 {notes.map((note) => {
