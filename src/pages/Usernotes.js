@@ -2,7 +2,7 @@ import React from 'react'
 import Notes from "../components/Notes";
 
 
-export const User = (props) => {
+export const Usernotes = (props) => {
   const {showAlert} = props
   return (
       <div>

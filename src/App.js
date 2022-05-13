@@ -9,7 +9,8 @@ import NoteState from "./context/notes/NoteState";
 import { Login } from "./components/Login";
 import { Signup } from "./components/Signup";
 import { useState } from "react";
-import { User } from "./pages/User";
+import { Usernotes } from "./pages/Usernotes";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [alert, setAlert] = useState(null);
@@ -32,11 +33,12 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Home showAlert={showAlert} />} />
               <Route exact path="/about" element={<About />} />
-              <Route exact path="/user" element={<User showAlert={showAlert} />} />
+              <Route exact path="/notes" element={<Usernotes showAlert={showAlert} />} />
               <Route exact path="/login" element={<Login showAlert={showAlert} />} />
               <Route exact path="/signup" element={<Signup showAlert={showAlert} />} />
             </Routes>
           </div>
+          <Footer />
         </Router>
       </NoteState>
     </>

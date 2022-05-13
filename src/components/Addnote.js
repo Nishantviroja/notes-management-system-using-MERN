@@ -17,6 +17,8 @@ const AddNote = (props) => {
     const onChange = (e)=>{
         setNote({...note, [e.target.name]: e.target.value})
     }
+
+
     return (
         <div className="container my-3">
             <h2>Add a Note</h2>
@@ -37,6 +39,8 @@ const AddNote = (props) => {
                 <button disabled={note.title.length<5 || note.description.length<5} type="submit" className="btn btn-primary" onClick={handleClick}>Add Note</button>
             </form>
         </div>
+
+        
     )
 }
 

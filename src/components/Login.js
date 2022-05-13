@@ -23,7 +23,7 @@ export const Login = (props) => {
             // save the auth token and redirect
             localStorage.setItem('token',json.authtoken);
         //    const sendSubmit = ()=>{
-            navigate("/user");
+            navigate("/notes");
             props.showAlert("Avi jaaa andar","success")
         // }
       }
