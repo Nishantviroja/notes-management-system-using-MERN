@@ -1,12 +1,8 @@
 import React from 'react';
-import Notes from "../components/Notes";
 
-export const Home = () => {
+export const Home = (props) => {
     return (
-        <div>
-        
-
-        <Notes/>
-    </div>
+      <div>Home page hai Hum</div>
     )
-}
+  }
+  
