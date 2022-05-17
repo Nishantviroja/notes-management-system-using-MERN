@@ -35,9 +35,11 @@ export const Login = (props) => {
   };
   return (
     <div className="h100  container">
-      
-      <div className="col-4"></div>
-
+      <div className="col-1"></div>
+      <div className="col-4 ">
+      <img src={require("../Images/svg5.svg").default} />
+      </div>
+       <div className="col-2"></div>
       <form className="col-4" onSubmit={handleSubmit}>
       <div>
       <div className=" text-primary my-4 text-center" >
@@ -80,7 +82,8 @@ export const Login = (props) => {
           </p>
         </div>
       </form>
-      <div className="col-4"></div>
+      <div className="col-1"></div>
+     
     </div>
   );
 };

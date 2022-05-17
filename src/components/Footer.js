@@ -2,8 +2,12 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div className="sticky-bottom navbar-dark bg-dark">
-    
-    </div>
+    <footer class="bg-light text-center mt-5 text-lg-start">
+  
+  <div class="text-center p-3 ">
+    © 2020 Copyright :<span class="text-dark" > SKYNotE.com || Team PnR <i class="fa-solid fa-heart text-danger"></i> </span>
+  </div>
+ 
+</footer>
   )
 }

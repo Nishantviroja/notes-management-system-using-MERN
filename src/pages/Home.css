@@ -1,0 +1,17 @@
+ .col p {
+    margin-bottom: 0;
+    text-align:justify;
+    font-size:17px;
+    color: black;
+    /* text-align:justify; */
+  }
+
+  h2{
+      text-align:center;
+      font-family: 'Audiowide', cursive;
+      color:black;
+      padding-bottom: 5px;
+  }
+img{
+    height:80%;
+}

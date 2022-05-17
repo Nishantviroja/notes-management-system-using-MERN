@@ -41,7 +41,7 @@ const AddNote = (props) => {
                 </div>
                
                
-                <button disabled={note.title.length<5 || note.description.length<5} type="submit" className="btn btn-primary" onClick={handleClick}>Add Note</button>
+                <button disabled={note.title.length<5 || note.description.length<5} type="submit" className="btn btn-primary" onClick={handleClick}><i class="fa-solid fa-plus me-2"></i>Add Note</button>
             </form>
             <div className='col-1'></div>
             </div>
