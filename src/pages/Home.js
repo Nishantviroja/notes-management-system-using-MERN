@@ -1,8 +1,9 @@
 import React from "react";
 import "./Home.css";
-import Nishant from '../Images/1.jpg';
-import Pratham from '../Images/2.jpg';
-import Radhika from '../Images/3.jpg';
+import home1 from "../Images/home1.jpg";
+import home2 from "../Images/home2.jpg";
+import home3 from "../Images/home3.jpg";
+import home4 from "../Images/home4.jpg";
 
 export const Home = (props) => {
   return (
