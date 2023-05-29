@@ -1,7 +1,9 @@
 // This file for connect TO Mongo DB.
 
+require('dotenv').config()
+
 const mongoose = require('mongoose');
-const mongoURI = "mongodb://localhost:27017/skynote"
+const mongoURI = process.env.DATABASE_URL;
 
 const connectTOMongo = ()=>{
     mongoose.connect(mongoURI,()=>{
