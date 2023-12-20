@@ -26,9 +26,9 @@ export const Signup = (props) => {
       localStorage.setItem("token", json.authtoken);
 
       navigate("/notes");
-      props.showAlert("Moj kar ja ane login kar topaaaa", "success");
+      props.showAlert("SignUp Completed", "success");
     } else {
-      props.showAlert("aa vastu tara mate nathi", "danger");
+      props.showAlert("SignUp Error", "danger");
     }
   };
 

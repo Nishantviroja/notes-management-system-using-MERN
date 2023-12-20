@@ -5,7 +5,7 @@ import Notes from "../components/Notes";
 export const Usernotes = (props) => {
   const {showAlert} = props
   return (
-      <div>
+    <div className="container">
       <Notes showAlert={showAlert}/>
   </div>
   )
